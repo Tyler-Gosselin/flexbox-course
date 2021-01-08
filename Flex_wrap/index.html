@@ -1,4 +1,4 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -9,7 +9,6 @@
         margin: 0;
         padding: 0;
       }
-
       .container {
         margin: 0;
         height: calc(100vh - 20px);
@@ -20,45 +19,32 @@
         align-items: center;
       }
 
-      .blocks {
+      .container > .img_blocks {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 1000px;
+        flex-wrap: wrap;
       }
 
-      .block {
-        background-color: cadetblue;
-        height: 200px;
-        margin: 20px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .block1 {
-        flex-basis: 400px;
-        flex-shrink: 2;
-        order: 3;
-      }
-
-      .block2 {
-        flex-basis: 100px;
-        order: 1;
-      }
-
-      .block3 {
-        flex-basis: 400px;
-        order: 2;
+      .img_blocks img {
+        margin: 5px;
+        height: 120px;
+        width: auto;
       }
     </style>
   </head>
+
   <body>
     <div class="container">
-      <div class="blocks">
-        <div class="block block1">1</div>
-        <div class="block block2">2</div>
-        <div class="block block3">3</div>
+      <div class="img_blocks">
+        <img src="images/1.jpg" alt="" />
+        <img src="images/2.jpg" alt="" />
+        <img src="images/3.jpg" alt="" />
+        <img src="images/4.jpg" alt="" />
+        <img src="images/5.jpg" alt="" />
+        <img src="images/6.jpg" alt="" />
+        <img src="images/7.jpg" alt="" />
+        <img src="images/8.jpg" alt="" />
       </div>
     </div>
   </body>
